@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="cleanBlog">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Clean Blog App</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"><!-- load bootstrap -->
+    <link rel="stylesheet" href="clean_blog_lib/css/clean-blog.css">
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+    </style>
+
+    <!-- SPELLS -->
+    <script src="lib/jquery/dist/jquery.js"></script><!-- load jquery -->
+    <script src="lib/angularjs/angular.min.js"></script><!-- load angular -->
+    <script src="clean_blog_lib/js/clean-blog.js"></script>
+    <script src="core.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+    <div class="container">
+            <div class="alert alert-info" role="alert">
+                API Version is <span ng-bind="api_version"></span> <br/>
+            </div>
+
+    </div>
+
+</body>
+</html>
